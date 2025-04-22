@@ -1,0 +1,22 @@
+[package]
+name = "swbcli"
+version = "0.1.0"
+edition = "2024"
+authors = ["exyrias <25100303+exyrias@users.noreply.github.com>"]
+description = "A simple CLI tool for SwitchBot (v1.1)"
+license = "MIT"
+repository = "https://github.com/exyrias/swbcli.git"
+readme = "README.md"
+keywords = ["switchbot", "cli", "api"]
+
+[dependencies]
+tokio = {version = "1.0", features = ["full"]}
+reqwest = {version = "0.12.15", features = ["json", "rustls-tls"], default-features = false}
+chrono = "0.4.40"
+uuid = {version = "1.16.0", features = ["v4"]}
+sha2 = "0.10.8"
+hmac = "0.12.1"
+base64 = "0.22.1"
+clap = {version="4.5.37", features=["derive"]}
+anyhow = "1.0.98"
+serde_json = "1.0.140"
